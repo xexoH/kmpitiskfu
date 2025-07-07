@@ -60,7 +60,6 @@ def process_datasets():
         pattern_file = f'vhodnie/pattern{i}.txt'
 
         if not os.path.exists(text_file) or not os.path.exists(pattern_file):
-            print(f"⚠️ Файлы для набора {i} не найдены!")
             continue
 
         with open(text_file, 'r') as f:
